@@ -9,7 +9,7 @@
   "scripts": {
     "eslint": "eslint src",
     "dist": "./node_modules/.bin/babel src --out-dir dist --copy-files --plugins=transform-object-rest-spread --presets=env,react",
-    "start": "parcel index.html -d parcel",
+    "start": "node init && parcel index.html -d parcel",
     "test": "jest",
     "prepublishOnly": "npm run eslint",
     "prepare": "npm run dist",
